@@ -33,7 +33,7 @@ public class PlayerHealth : MonoBehaviour
 
     void Update()
     {
-        transparency = 1f - (currentHP/100f);
+        transparency = 1f - ((currentHP*1.95f)/100f);
         if (Mathf.Abs(lastTransparency - transparency) > 0.01f)
         {
             lastTransparency = transparency;

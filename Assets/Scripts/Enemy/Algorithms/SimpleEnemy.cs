@@ -4,7 +4,7 @@ using System.Collections;
 
 public class SimpleEnemy : MonoBehaviour
 {
-    private float lookRadius = 15f;
+    private float lookRadius = 20f;
     private float viewAngle = 120f;
     private float distance;
     private Transform target;

@@ -46,9 +46,13 @@ public class PlayerMovementManager : MonoBehaviour
     private float footstepCooldown = 0.3f;
 
     public float PlayerNoiseLevel = 10f;
+
+    public float totalDistanceTraveled = 0f;
+    private Vector3 lastPosition; 
     void Awake()
     {
         player = gameObject;
+        lastPosition = transform.position;
         if (groundCheck == null)
         {
             GameObject groundCheckObj = new GameObject("GroundCheck");
@@ -146,6 +150,12 @@ public class PlayerMovementManager : MonoBehaviour
             playerVelocity.y = -2f;
             canAttack = true;
         }
+
+        float distance = Vector3.Distance(transform.position, lastPosition);
+
+        totalDistanceTraveled += distance;
+        lastPosition = transform.position;
+        Debug.Log(totalDistanceTraveled);
 
         characterController.Move(playerVelocity * Time.deltaTime);
     }

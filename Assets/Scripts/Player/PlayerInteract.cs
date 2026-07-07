@@ -12,8 +12,6 @@ public class PlayerInteraction : MonoBehaviour
     private InputManager inputManager;
     private PlayerUI playerUI;
     private AudioSource audioSource;
-    private float lastRaycastTime = 0f;
-    private float raycastInterval = 0.1f;
 
     void Start()
     {

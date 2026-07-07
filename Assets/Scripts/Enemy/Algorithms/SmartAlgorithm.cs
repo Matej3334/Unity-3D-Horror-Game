@@ -6,7 +6,7 @@ using UnityEngine.UIElements;
 
 public class SmartAlgorithm : MonoBehaviour
 {
-    private float lookRadius = 15f;
+    private float lookRadius = 20f;
     private float viewAngle = 120f;
     private float distance;
     private Transform target;
@@ -101,7 +101,7 @@ public class SmartAlgorithm : MonoBehaviour
         
         if (noiseLevel > 1.5f)
         {
-            Debug.Log("Noise");
+            //Debug.Log("Noise");
             return true;
         }
         

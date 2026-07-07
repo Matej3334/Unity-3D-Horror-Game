@@ -17,7 +17,7 @@ public class RoamingAlgorithm : MonoBehaviour
     private int currentWaypoint;
     private float WaypointTimer = 0f;
 
-    private float lookRadius = 15f;
+    private float lookRadius = 20f;
     private float viewAngle = 120f;
     private bool isChasing = false;
     private bool WaypointSet = false;

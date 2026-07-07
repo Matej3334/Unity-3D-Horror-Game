@@ -11,7 +11,7 @@ public class StaminaController : MonoBehaviour
     [HideInInspector] public bool isRunning = false;
     [HideInInspector] public bool Jump = false;
 
-    [SerializeField] private float runDrain = 10.0f;
+    [SerializeField] private float runDrain = 25.0f;
     [SerializeField] private float staminaRegen = 10.0f;
     [SerializeField] private float regenDelay = 2.0f;
 
